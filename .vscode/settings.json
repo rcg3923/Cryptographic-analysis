@@ -1,0 +1,16 @@
+{
+  "python.formatting.provider": "none",
+  "python.formatting.blackArgs": ["--line-length", "100"], // 최대 코드 길이 100설정
+  "editor.formatOnSave": true, // 저장할때마다 적용
+
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": ["--disable=W0401", "--disable=C0111"],
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.linting.flake8Args": ["--max-line-length=120", "--ignore=W291"],
+  "python.linting.flake8Enabled": false,
+  "python.linting.mypyEnabled": false,
+  "python.linting.enabled": true
+}
